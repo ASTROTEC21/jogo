@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+<title>SpaceWars</title>
+</head>
+<body>
+  <div id="titulo">SpaceWars</div>
+  <div id="placar">Pontuação: <span id="pontuacao">0</span></div>
+  <canvas id="tela" width="500" height="600"></canvas>
+  <button id="botaoPausar" onclick="alternarPausa()">Pausar</button>
+  
+  <div id="telaIntro">
+    <h2>Bem-vindo ao SpaceWars!</h2>
+    <p>Comandos do Jogo:</p>
+    <ul>
+      <li>Setas Esquerda/Direita: Mover a nave</li>
+      <li>Barra de Espaço: Atirar</li>
+      <li>Tecla P: Pausar/Continuar</li>
+    </ul>
+
+    <p>Objetivo do Jogo:</p>
+
+    <p>Elimine todos os invasores antes que eles alcancem sua nave.</p>
+    <button onclick="iniciarJogo()">Iniciar Jogo</button>
+    <button id="botaoSairIntro" onclick="sairParaIndex()">Sair para o Astrotec</button>
+  </div>
+
+  <div id="telaGameOver">
+    <div id="mensagemGameOver">Fim de Jogo</div>
+    <button onclick="reiniciarJogo()">Reiniciar</button>
+    <button id="botaoSairGameOver" onclick="voltarParaIntro()">Voltar para o início</button>
+  </div>
+
+  <div id="telaVitoria">
+    <div id="mensagemVitoria">Você Venceu!</div>
+    <button onclick="reiniciarJogo()">Reiniciar</button>
+    <button id="botaoSairVitoria" onclick="voltarParaIntro()">Voltar para o início</button>
+  </div>
+
+  <div id="telaPausa">
+    <div>Pausado</div>
+    <button onclick="alternarPausa()">Continuar</button>
+    <button id="botaoSairPausa" onclick="voltarParaIntro()">Voltar para o início</button>
+  </div>
+
+  <img id="invasor" src="imperio2 (1).png" style="display: none;">
+  <img id="nave" src="spaceship.png" style="display: none;">
+
+</body>
+</html>

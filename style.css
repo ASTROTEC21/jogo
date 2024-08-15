@@ -1,0 +1,125 @@
+* {
+    font-family: "Inter", sans-serif;
+  }
+  
+  :root {
+    --botao-color: #19215B;
+    --botao-quiz: #4B12BC;
+    --botao-sair: #C6271A;
+    --texto: #FFFFFF;
+    --preto: #010101;
+    --menu: #0F0E0E;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    background: url(planetasfundo.png) no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  #titulo {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  #placar {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  #tela {
+    border: 2px solid #000;
+    background-color: #fff;
+  }
+  
+  #telaIntro, #telaGameOver, #telaVitoria, #telaPausa {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(planetasfundo.png) no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  #telaIntro button, #telaGameOver button, #telaVitoria button, #telaPausa button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: var(--botao-quiz); 
+    color: var(--texto); 
+    font-family: "Inter", sans-serif; 
+    border: none; 
+    border-radius: 5px; 
+    margin: 10px; /
+  }
+  
+  #telaIntro button:hover, #telaGameOver button:hover, #telaVitoria button:hover, #telaPausa button:hover {
+    background-color: var(--botao-color);
+  }
+  
+  #telaIntro button:active, #telaGameOver button:active, #telaVitoria button:active, #telaPausa button:active {
+    background-color: var(--botao-quiz);
+  }
+  
+  
+  #telaIntro {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+  }
+  
+  #telaIntro #botaoIniciar {
+    margin-bottom: 10px; 
+  }
+  
+  
+  #telaIntro #botaoVoltarAstrotec {
+   
+    margin-top: 10px; 
+  }
+  
+  
+  #telaGameOver button, #telaVitoria button, #telaPausa button {
+    margin: 10px; 
+  }
+  
+  
+  #botaoPausar, #botaoSairIntro {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: var(--botao-quiz); 
+    color: var(--texto); 
+    font-family: "Inter", sans-serif; 
+    border: none; 
+    border-radius: 5px; 
+  }
+  
+  #botaoPausar:hover, #botaoSairIntro:hover {
+    background-color: var(--botao-color);
+  }
+  
+  #botaoPausar:active, #botaoSairIntro:active {
+    background-color: var(--botao-quiz);
+  }
+  
